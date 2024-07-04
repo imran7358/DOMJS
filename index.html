@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>JS Dom Element</title>
+<style>
+    .container{justify-content: center; align-items: center;width: 700px;margin: 0 auto;}
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function(){
+        const divLen = document.querySelectorAll("div.container div")
+        divLen.forEach((div,index)=>{
+            if(index % 2 === 0){
+                div.style.background = "grey"
+                div.style.padding = "10px"
+                div.style.margin= "10px"
+            }
+        })
+    })
+</script>
+</head>
+<body>
+<div class="container">
+    <h1 style="display:block; width: 100%;">Q. Change the background color of alrternate Div</h1>
+    <div>Div element 1</div>
+    <div>Div element 2</div>
+    <div>Div element 3</div>
+    <div>Div element 4</div>
+    <div>Div element 5</div>
+</div>
+
+</body>
+</html>
